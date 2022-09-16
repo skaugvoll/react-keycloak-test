@@ -27,13 +27,13 @@ function App() {
                   </ProtectedRoute>
                 }
               />
+              <Route path="user" element={<ProtectedPath />}>
+                <Route path="profile" element={<UserProfile />} />
+              </Route>
               <Route
                 path="*"
                 element={<Page404 title={"404 - Page Not Found"} />}
               />
-            </Route>
-            <Route path="/user" element={<ProtectedPath />}>
-              <Route path="profile" element={<UserProfile />} />
             </Route>
           </Routes>
         </BrowserRouter>
