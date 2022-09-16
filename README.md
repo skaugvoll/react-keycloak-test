@@ -34,4 +34,3 @@ important files;
 5.
 
 - keycloak.logout functions should specifiy which redirect url to use
--
