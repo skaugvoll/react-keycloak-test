@@ -1,0 +1,27 @@
+{
+  "realm" : "master",
+  "users" : [ {
+    "id" : "5e73bd11-da19-4a60-b1e9-0a4b75ad2daa",
+    "createdTimestamp" : 1664366469455,
+    "username" : "sisk",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "credentials" : [ {
+      "id" : "c1ac468c-e81d-4e0f-87a7-dbc5aa00d408",
+      "type" : "password",
+      "createdDate" : 1664366469568,
+      "secretData" : "{\"value\":\"MeXsoqwTVJUgVZw0XO5CHb96oQzKCYLGN3d3Pr3C/xLwsNHvxuYWRDcOTbpRaWaiaj/tOCAMZ09U5BhP4fW/jQ==\",\"salt\":\"PoT6/+vp+WT6tYdFSenNWA==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "admin", "default-roles-master" ],
+    "clientRoles" : {
+      "test-realm" : [ "view-authorization", "manage-events", "view-users", "query-users", "query-groups", "manage-clients", "view-events", "manage-authorization", "view-identity-providers", "query-clients", "manage-realm", "query-realms", "create-client", "view-realm", "view-clients", "manage-users", "manage-identity-providers" ],
+      "test-otp-realm" : [ "manage-realm", "query-clients", "create-client", "manage-identity-providers", "query-users", "manage-events", "view-realm", "view-identity-providers", "query-realms", "view-events", "view-users", "query-groups", "manage-users", "manage-authorization", "view-clients", "view-authorization", "manage-clients" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}
