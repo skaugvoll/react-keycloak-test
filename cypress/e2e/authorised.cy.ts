@@ -1,11 +1,12 @@
 describe("authorised", () => {
   beforeEach(() => {
-    cy.kcLogin("test", "test");
+    // cy.kcLogin("test", "test");
+    cy.kcLoginOTP("test2", "test2");
   });
 
   afterEach(() => {
-    cy.kcLogout();
-    // cy.visit("http://localhost:3000/secured"); // using this we can visually see that we are signed out
+    // cy.kcLogout();
+    cy.visit("http://localhost:3000/secured"); // using this we can visually see that we are signed out
   });
 
   it("shows token", () => {

@@ -15,7 +15,7 @@ const Secured = () => {
       <button
         onClick={() =>
           keycloak.logout({
-            redirectUri: "http://localhost:3000",
+            redirectUri: "http://localhost:3000/",
           })
         }
       >
