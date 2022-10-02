@@ -1,7 +1,7 @@
 describe("authorised", () => {
   beforeEach(() => {
     // cy.kcLogin("test", "test");
-    cy.kcLoginOTP("test2", "test2");
+    cy.kcLoginOTP("test1", "test1");
   });
 
   afterEach(() => {

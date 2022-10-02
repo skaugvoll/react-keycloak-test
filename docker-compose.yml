@@ -1,7 +1,18 @@
 version: "3"
 services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
   keycloak:
-    image: quay.io/keycloak/keycloak:19.0.2
+    # image: quay.io/keycloak/keycloak:19.0.2
+    build:
+      context: .
+      dockerfile: Dockerfile.keycloak
     command: start-dev
     depends_on:
       - db
@@ -12,6 +23,8 @@ services:
       DB_VENDOR: postgres
       DB_USER: ${POSTGRES_USER}
       DB_PASSWORD: ${POSTGRES_PASSWORD}
+      # TZ: "Europe/Oslo"
+      # TZ: "CEST"
     ports:
       - 8080:8080
   db:
@@ -19,6 +32,11 @@ services:
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      # TZ: 'UTC+2'
+      TZ: "Europe/Oslo"
+      PGTZ: "Europe/Oslo"
+      # TZ: "GMT+2"
+      # PGTZ: "GMT+2"
     volumes:
       - kcdb:/var/lib/postgresql/data
     ports:

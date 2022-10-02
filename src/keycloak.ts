@@ -7,6 +7,7 @@ console.info(`KC Config:\nRealm: ${realm}\nCID: ${clientId}`);
 
 const keycloakConfig = {
   url: "http://localhost:8080",
+  // url: "http://keycloak:8080",
   // url: "http://localhost:8080/auth",
   realm,
   clientId,
