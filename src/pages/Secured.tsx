@@ -8,7 +8,9 @@ const Secured = () => {
       <h1>Secured By KC</h1>
       <h2>Access Token Values:</h2>
       <pre>
-        <code>{JSON.stringify(keycloak.tokenParsed, null, 2)}</code>
+        <code data-cy="tokenInfo">
+          {JSON.stringify(keycloak.tokenParsed, null, 2)}
+        </code>
       </pre>
       <button
         onClick={() =>

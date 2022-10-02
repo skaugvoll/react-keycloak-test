@@ -15,7 +15,9 @@ const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
     return (
       <div>
         <p>You're not signed in</p>
-        <button onClick={() => keycloak.login()}>Login</button>
+        <button data-cy="signin" onClick={() => keycloak.login()}>
+          Login
+        </button>
       </div>
     );
   }

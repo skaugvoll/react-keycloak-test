@@ -4,6 +4,11 @@
 - securing with kc: https://cagline.medium.com/authenticate-and-authorize-react-routes-component-with-keycloak-666e85662636
 - https://blog.logrocket.com/implement-keycloak-authentication-react/
 
+# Noteworthy discoveries
+
+> Note ther was a change in OIDC / Keycloak protocol, so the path-prefix "auth" was removed. A lot of tutorials and libraries have not updated with this new change. so that's something to keep in mind!
+> KC rest api overview: https://www.keycloak.org/docs-api/11.0/rest-api/index.html#_users_resource
+
 # Setting up KeyCloak
 
 1. docker-compose up
